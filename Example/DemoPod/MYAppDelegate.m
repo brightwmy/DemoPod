@@ -7,12 +7,16 @@
 //
 
 #import "MYAppDelegate.h"
+#import <DemoPod/Print.h>
 
 @implementation MYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    Print *p = [Print new];
+    [p print];
     return YES;
 }
 
